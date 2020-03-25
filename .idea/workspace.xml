@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f1e0da4-23b4-4a09-8f09-fa7381b3b3ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/BlogRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/BlogRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_26_083636_add_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_26_083636_add_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BlogSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/crud.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/crud.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/ver.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/ver.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +174,7 @@
       <updated>1585066244934</updated>
       <workItem from="1585066247314" duration="846000" />
       <workItem from="1585122850778" duration="20111000" />
-      <workItem from="1585211441115" duration="11062000" />
+      <workItem from="1585211441115" duration="11618000" />
     </task>
     <task id="LOCAL-00001" summary="Edición, eliminación y login">
       <created>1585153073791</created>
@@ -205,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585214423346</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Relaciones de datos, migración y validacion de formularios">
+      <created>1585225532372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585225532372</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,17 +213,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Edición, eliminación y login" />
     <MESSAGE value="Seeder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seeder" />
+    <MESSAGE value="Relaciones de datos, migración y validacion de formularios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Relaciones de datos, migración y validacion de formularios" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585215265303">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585215265303" />
-    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2" timestamp="1585214423116">
+    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2" timestamp="1585225532146">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1585214423116" />
+    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1585225532146" />
     <state x="228" y="142" key="IDE.errors.dialog" timestamp="1585122922334">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -233,10 +233,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="128" y="69" key="MergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1585153094587" />
-    <state x="350" y="114" key="MultipleFileMergeDialog" timestamp="1585214335282">
+    <state x="350" y="114" key="MultipleFileMergeDialog" timestamp="1585225547510">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="350" y="114" key="MultipleFileMergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1585214335282" />
+    <state x="350" y="114" key="MultipleFileMergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1585225547510" />
     <state x="396" y="207" key="NewPhpClassDialog" timestamp="1585218940155">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -245,10 +245,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="464" y="326" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1585218997646" />
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1585214428587">
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1585225552107">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1585214428587" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1585225552107" />
     <state x="310" y="141" width="803" height="582" key="find.popup" timestamp="1585218491845">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
