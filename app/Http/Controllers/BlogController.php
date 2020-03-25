@@ -5,20 +5,22 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use App\Repository\CategoriaRepository;
 use Illuminate\Http\Request;
-
+use App\Repository\DocumentoRepository;
 use App\Repository\BlogRepository;
 
 class BlogController extends Controller {
 
     private $blogRepo;
     private $catRepo;
+    private $docRepo;
 
 
-    public function __CONSTRUCT(BlogRepository $blogRepo, CategoriaRepository $catRepo){
+    public function __CONSTRUCT(BlogRepository $blogRepo, CategoriaRepository $catRepo,DocumentoRepository $docRepo){
         $this->middleware('auth');
 
         $this->blogRepo = $blogRepo;
         $this->catRepo = $catRepo;
+        $this->docRepo = $docRepo;
     }
 
     public function getIndex(){
@@ -59,6 +61,14 @@ class BlogController extends Controller {
 
         $this->blogRepo->eliminar( $id );
         return redirect( 'home/blog' );
+    }
+
+    public function postAdjuntar(Request $request)
+    {
+        // DEBEMOS VALIDAR
+        // USTEDES MISMOS SON, IMPLEMENTALO
+
+        $this->docRepo->guardar($request);
     }
 
 }
