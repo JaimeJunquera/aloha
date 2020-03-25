@@ -11,7 +11,7 @@ class AddCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('category', function (Blueprint $table) {
+        Schema::create('categoria', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre',100);
             $table->text('descripcion');
@@ -21,12 +21,12 @@ class AddCategoriesTable extends Migration
         //Alteramos y agregamos relacion con la tabla blog
         Schema::table('blog',function ($table){
             //Creacion del campo
-            $table->integer('category_id')->unsigned()->nullable();
+            $table->integer('categoria_id')->unsigned()->nullable();
 
             //Agrega una relacion
-            $table->foreign('category_id')
+            $table->foreign('categoria_id')
                   ->references('id')
-                  ->on('category');
+                  ->on('categoria');
         });
     }
 
@@ -35,11 +35,13 @@ class AddCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('category');
 
         Schema::table('blog',function ($table){
-            $table->dropForeign(['user_id']);
+            $table->dropForeign(['categoria_id']);
+            $table->dropColumn('categoria_id');
         });
+
+        Schema::dropIfExists('categoria');
 
     }
 }

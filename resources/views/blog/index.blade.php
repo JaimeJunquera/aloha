@@ -19,7 +19,6 @@
         <tr>
             <th>Nombre</th>
             <th>Descripcion</th>
-            <th style="width:10px;">Contenido</th>
             <th style="width:150px;">Creado</th>
             <th style="width:150px;">Actualizado</th>
             <th style="width:160px;">Acciones</th>
@@ -35,12 +34,12 @@
                     </a>
                     @if($m->categoria != null)
                         <span class="help-block">
-                    {{ $m->categoria->Nombre }}
-                </span>
+                            <br>
+                            {{ $m->categoria->nombre }}
+                        </span>
                     @endif
                 </td>
                 <td>{{ $m->descripcion }}</td>
-                <td>{{ $m->contenido }}</td>
                 <td>{{ $m->created_at }}</td>
                 <td>{{ $m->updated_at }}</td>
                 <td class="text-center">

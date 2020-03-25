@@ -14,11 +14,11 @@ class DatabaseSeeder extends Seeder
         $this->truncateTables([
             'users',
             'blog',
-            'category'
+            'categoria'
         ]);
 
         // $this->call(UsersTableSeeder::class);
-        $this->call(blogSeeder::class);
+        //$this->call(BlogSeeder::class);
         $this->call(UserSeeder::class);
     }
 

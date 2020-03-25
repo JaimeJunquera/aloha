@@ -28,6 +28,7 @@ class BlogRepository
         $blog->descripcion = $data['descripcion'];
         $blog->contenido = $data['contenido'];
         $blog->habilitado = $data['habilitado'];
+        $blog->categoria_id = $data['categoria_id'];
 
         $blog->save();
     }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\Repository\CategoriaRepository;
 use Illuminate\Http\Request;
 
 use App\Repository\BlogRepository;
@@ -10,12 +11,14 @@ use App\Repository\BlogRepository;
 class BlogController extends Controller {
 
     private $blogRepo;
+    private $catRepo;
 
 
-    public function __CONSTRUCT(BlogRepository $blogRepo){
+    public function __CONSTRUCT(BlogRepository $blogRepo, CategoriaRepository $catRepo){
         $this->middleware('auth');
 
         $this->blogRepo = $blogRepo;
+        $this->catRepo = $catRepo;
     }
 
     public function getIndex(){
@@ -26,10 +29,21 @@ class BlogController extends Controller {
 
     public function getCrud($id = 0){
         return view('blog/crud', [
-            'model' => ($id > 0 ? $this->blogRepo->obtener($id) : null)
+            'model' => ($id > 0 ? $this->blogRepo->obtener($id) : null),
+            'categorias' => $this->catRepo->listar()
         ]);
     }
     public function postCrud(Request $request) {
+//        $mensaje = [
+//          'titulo.required' => 'El :attribute debe ser ingresado',
+//          'titulo.max' => 'El valor ingresado para :attribute es demasiado largo',
+//        ];
+        $this->validate($request, [
+            'categoria_id' => 'required|numeric',
+            'titulo' => 'required|max:70',
+            'descripcion' => 'required|max:100',
+            'habilitado' => 'required|numeric'
+        ]);// Pueden pasar al variable $mensaje para personalizar las reglas mostrando un mensaje personalziado
 
         $this->blogRepo->guardar( $request );
         return redirect( 'home/blog' );
@@ -42,6 +56,7 @@ class BlogController extends Controller {
     }
 
     public function getEliminar($id){
+
         $this->blogRepo->eliminar( $id );
         return redirect( 'home/blog' );
     }

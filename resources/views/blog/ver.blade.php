@@ -4,6 +4,11 @@
 
     <h1 class="page-header">
         {{ $model->titulo }}
+        @if($model->categoria != null)
+            <small>
+                - {{ $model->categoria->nombre }}
+            </small>
+        @endif
     </h1>
 
     <h3>Descripcion</h3>
