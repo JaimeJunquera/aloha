@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f1e0da4-23b4-4a09-8f09-fa7381b3b3ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/BlogRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/BlogRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_25_094710_create_blog_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_25_094710_create_blog_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/crud.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/crud.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/ver.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/ver.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/blogSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BlogSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="jaimejunquera &lt;junque96@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -134,20 +132,26 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1Za9GoQtIDhnjWHSDpjDZfbto5F" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeds" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database/seeds" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/css" />
     </key>
@@ -169,22 +173,59 @@
       <option name="presentableId" value="Default" />
       <updated>1585066244934</updated>
       <workItem from="1585066247314" duration="846000" />
-      <workItem from="1585122850778" duration="19933000" />
+      <workItem from="1585122850778" duration="20111000" />
+      <workItem from="1585211441115" duration="2772000" />
     </task>
+    <task id="LOCAL-00001" summary="Edición, eliminación y login">
+      <created>1585153073791</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585153073791</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Seeder">
+      <created>1585214312949</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585214312949</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Edición, eliminación y login" />
+    <MESSAGE value="Seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seeder" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2" timestamp="1585214312171">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1585214312171" />
     <state x="228" y="142" key="IDE.errors.dialog" timestamp="1585122922334">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="228" y="142" key="IDE.errors.dialog/0.0.1280.800@0.0.1280.800" timestamp="1585122922334" />
-    <state x="464" y="326" key="NewPhpFileDialog" timestamp="1585140199249">
+    <state x="128" y="69" key="MergeDialog" timestamp="1585153094587">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="464" y="326" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1585140199249" />
+    <state x="128" y="69" key="MergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1585153094587" />
+    <state x="350" y="114" key="MultipleFileMergeDialog" timestamp="1585214335282">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="350" y="114" key="MultipleFileMergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1585214335282" />
+    <state x="464" y="326" key="NewPhpFileDialog" timestamp="1585213750807">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="464" y="326" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1585213750807" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1585214324950">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1585214324950" />
     <state x="310" y="141" width="803" height="582" key="find.popup" timestamp="1585152001366">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

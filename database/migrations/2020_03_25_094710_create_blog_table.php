@@ -7,8 +7,6 @@ use Illuminate\Support\Facades\Schema;
 class  CreateBlogTable extends Migration
 {
     /**
-     * Run the migrations.
-     *
      * @return void
      */
     public function up()
@@ -18,18 +16,12 @@ class  CreateBlogTable extends Migration
             $table->string('titulo',100);
             $table->string('descripcion',200);
             $table->text('contenido');
-<<<<<<< HEAD
-            $table->tinyInteger('Habilitado')->default(1);
-=======
             $table->tinyInteger('habilitado')->default(1);
->>>>>>> Edición, eliminación y login
             $table->timestamps();
         });
     }
 
     /**
-     * Reverse the migrations.
-     *
      * @return void
      */
     public function down()
