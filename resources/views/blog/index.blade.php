@@ -47,7 +47,7 @@
                     <a class="btn btn-xs btn-default" href="blog/crud/{{ $m->id }}">
                         <i class="oi oi-pencil"></i>
                     </a>
-                    <a class="btn btn-xs btn-danger" href="/blog/eliminar/{{ $m->id }}">
+                    <a class="btn btn-xs btn-danger" href="/home/blog/eliminar/{{ $m->id }}">
                         <i class="oi oi-trash"></i>
                     </a>
                 </td>

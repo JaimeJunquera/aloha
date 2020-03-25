@@ -13,7 +13,9 @@ class BlogController extends Controller {
 
 
     public function __CONSTRUCT(BlogRepository $blogRepo){
-       $this->blogRepo = $blogRepo;
+        $this->middleware('auth');
+
+        $this->blogRepo = $blogRepo;
     }
 
     public function getIndex(){
@@ -39,5 +41,9 @@ class BlogController extends Controller {
         ]);
     }
 
+    public function getEliminar($id){
+        $this->blogRepo->eliminar( $id );
+        return redirect( 'home/blog' );
+    }
 
 }

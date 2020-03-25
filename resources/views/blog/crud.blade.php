@@ -1,8 +1,8 @@
 <?php
-$Habilitado = true;
+$habilitado = true;
 
 if(is_object($model)){
-    $Habilitado = ($model->Habilitado == 1);
+    $habilitado = ($model->habilitado == 1);
 }
 ?>
 
@@ -27,7 +27,7 @@ if(is_object($model)){
 
         <div class="form-group">
             <label>Descripcion</label>
-            <textarea class="form-control" name="descripcion"> {{ is_object($model) ? $model->descripcion : '' }}</textarea>
+            <textarea class="form-control" name="descripcion">{{ is_object($model) ? $model->descripcion : '' }}</textarea>
         </div>
 
         <div class="form-group">
@@ -36,10 +36,10 @@ if(is_object($model)){
         </div>
 
         <div class="form-group">
-            <label>Habilitado</label>
-            <select class="form-control" name="Habilitado">
-                <option {{ $Habilitado ? 'selected' : '' }} value="1">Si</option>
-                <option {{ $Habilitado ? 'selected' : '' }} value="0">No</option>
+            <label>habilitado</label>
+            <select class="form-control" name="habilitado">
+                <option {{ $habilitado ? 'selected' : '' }} value="1">Si</option>
+                <option {{ !$habilitado ? 'selected' : '' }} value="0">No</option>
             </select>
         </div>
 

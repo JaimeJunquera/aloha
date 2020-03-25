@@ -12,8 +12,8 @@
     <h3>Contenido</h3>
     <p>{{ $model->contenido }}</p>
 
-    <h3>Habilitado</h3>
-    <p>{{ $model->Habilitado == 1 ? 'Si' : 'No' }}</p>
+    <h3>habilitado</h3>
+    <p>{{ $model->habilitado == 1 ? 'Si' : 'No' }}</p>
 
     <div class="well well-sm">
         <b>Creado:</b> {{ $model->created_at }}

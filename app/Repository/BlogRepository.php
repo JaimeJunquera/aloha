@@ -17,15 +17,22 @@ class BlogRepository
     public function guardar($data){
         $blog = new Blog();
 
+        // Logica para especificar si es un UPDATE
+        if($data['id'] > 0)
+        {
+            $blog->exists = true;
+            $blog->id = $data['id'];
+        }
+
         $blog->titulo = $data['titulo'];
         $blog->descripcion = $data['descripcion'];
         $blog->contenido = $data['contenido'];
-        $blog->habilitado = $data['Habilitado'];
+        $blog->habilitado = $data['habilitado'];
 
         $blog->save();
     }
 
     public function eliminar($id){
-
+        return Blog::destroy($id);
     }
 }
