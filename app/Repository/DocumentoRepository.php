@@ -20,6 +20,8 @@ class DocumentoRepository
 
         $originalName = date('ymdhis-') . strtolower(str_replace('-', '', $originalName));
 
+        $data->file('archivo')->move('uploads', $originalName);
+
         $documento = new Documento();
 
         $documento->nombre = $data['nombre'];
