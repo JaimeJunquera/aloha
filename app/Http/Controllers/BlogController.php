@@ -66,6 +66,7 @@ class BlogController extends Controller {
 
     public function postAdjuntar(Request $request)
     {
+        //Probando lo que me devuelve el request
         dd ($request);
 
         //$this->docRepo->guardar($request);

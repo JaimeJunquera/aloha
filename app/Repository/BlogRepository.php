@@ -15,6 +15,8 @@ class BlogRepository
     }
 
     public function guardar($data){
+        //Falta incluir el guardar
+
         $blog = new Blog();
 
         // Logica para especificar si es un UPDATE
