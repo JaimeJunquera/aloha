@@ -31,4 +31,6 @@ Route::post('/home/blog/crud', 'BlogController@postCrud');
 Route::get('/home/blog/ver/{id}', 'BlogController@getVer')->name('ver');
 Route::get('/home/blog/eliminar/{id}', 'BlogController@getEliminar')->name('eliminar');
 Route::post('/home/blog/adjuntar', 'BlogController@postAdjuntar');
+Route::get('/home/blog/documentos/{id}', 'BlogController@getDocumentos');
+
 

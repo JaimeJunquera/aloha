@@ -66,8 +66,18 @@ class BlogController extends Controller {
     public function postAdjuntar(Request $request)
     {
         //dd($request);
+        //hay que validar
 
         $this->docRepo->guardar($request);
+
+        //Este return no venia en el blog, al adjuntar se sigue quedando en la pagina y se sube el archivo,
+        //Pero por cuestion de este laravel o se me pasa algo se reedirige a la página y yo sólo quiero
+        //capturar el post y mostrar el listado de documentos
+        return redirect()->back();
+    }
+
+    public function getDocumentos($blog_id){
+        return $this->docRepo->listar($blog_id);
     }
 
 }

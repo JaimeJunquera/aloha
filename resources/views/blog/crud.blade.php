@@ -102,10 +102,57 @@ if(is_object($model)){
                             Adjuntar
                         </button>
                     </form>
+
+                    <hr>
+                    <ul id="adjuntos" class="list-group"></ul>
                 </div>
             @endif
         </div>
     </div>
 
 </div>
+
+<script id="documentos" type="text/x-handlebars-template">
+    @{{#data}}
+        <li class="list-group-item">
+            <a href="{{url('uploads')}}/@{{archivo}}" target="_blank">
+                @{{ nombre }}
+            </a>
+        </li>
+    @{{/data}}
+</script>
+
+@endsection
+
+@section('scripts')
+    <script>
+        $(document).ready(function() {
+            documentos();
+
+            $('#documento-adjuntar').submit(function() {
+                var form = $(this);
+                form.ajaxSubmit({
+                    success: function() {
+                        form.find('input').val('');
+                        documentos();
+                    }
+                });
+                return false;
+            });
+        });
+
+        function documentos() {
+            $.post('{{url('blog/documentos/' . $model->id)}}', {
+                _token: '{{ csrf_token() }}'
+            },function(r){
+                var source   = $("#documentos").html();
+                var template = Handlebars.compile(source);
+
+                $("#adjuntos").html(
+                    template({data: r})
+                );
+            }, 'json')
+        }
+
+    </script>
 @endsection

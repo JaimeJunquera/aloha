@@ -7,18 +7,18 @@ use App\Documento;
 class DocumentoRepository
 {
     public function listar($blog_id) {
-        return Documento::where('blog_id', $blog_id)
-            ->get();
+        return Documento::where('blog_id', $blog_id)->get();
     }
 
     public function guardar($data) {
 
-        //dd($data);
 
         $originalName = $data->file('archivo')
                               ->getClientOriginalName();
 
-        $originalName = date('ymdhis-') . strtolower(str_replace('-', '', $originalName));
+        $originalName = date('Y-m-d-h:m:s-') . strtolower(str_replace('-', '', $originalName));
+
+        $data->file('archivo')->move('uploads', $originalName);
 
         $data->file('archivo')->move('uploads', $originalName);
 
