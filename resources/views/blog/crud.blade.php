@@ -85,7 +85,7 @@ if(is_object($model)){
             </div>
             @if(is_object($model))
                 <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
-                    <form id="documento-adjuntar" method="post" action="{{ url('home/blog/adjuntar') }}">
+                    <form id="documento-adjuntar" method="post" enctype="multipart/form-data" action="{{ url('home/blog/adjuntar') }}">
                         {{ csrf_field() }}
                         <input type="hidden" name="blog_id" value="{{ $model->id }}" />
 

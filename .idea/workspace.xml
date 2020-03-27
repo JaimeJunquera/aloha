@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f1e0da4-23b4-4a09-8f09-fa7381b3b3ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/BlogRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/BlogRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/crud.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/crud.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +176,7 @@
       <workItem from="1585066247314" duration="846000" />
       <workItem from="1585122850778" duration="20111000" />
       <workItem from="1585211441115" duration="17227000" />
-      <workItem from="1585295764320" duration="7245000" />
+      <workItem from="1585295764320" duration="8366000" />
     </task>
     <task id="LOCAL-00001" summary="Edición, eliminación y login">
       <created>1585153073791</created>
@@ -226,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585305403521</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Creacion de la tabla documentos para incluir archivos, las pestaña en el crud, repositorio y controlador, también se ha creado un jquery">
+      <created>1585305512817</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585305512817</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,10 +256,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585215265303" />
-    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2" timestamp="1585305403235">
+    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2" timestamp="1585305512647">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1585305403235" />
+    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1585305512647" />
     <state x="228" y="142" key="IDE.errors.dialog" timestamp="1585240928439">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -272,14 +280,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="464" y="326" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1585302383955" />
-    <state width="568" height="445" key="SwitcherDM" timestamp="1585237344996">
+    <state width="568" height="445" key="SwitcherDM" timestamp="1585308320080">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="568" height="445" key="SwitcherDM/0.0.1280.800@0.0.1280.800" timestamp="1585237344996" />
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1585305426601">
+    <state width="568" height="445" key="SwitcherDM/0.0.1280.800@0.0.1280.800" timestamp="1585308320080" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1585305518183">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1585305426601" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1585305518183" />
     <state x="443" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585304161073">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
