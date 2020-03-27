@@ -18,13 +18,13 @@ class CreateDocumentTable extends Migration
             $table->string('nombre',100);
             $table->string('archivo',100);
             //Relacion
-            $table->integer('publicacion_id')
+            $table->integer('blog_id')
                   ->unsigned();
             $table->timestamps();
         });
 
         Schema::table('documento',function ($table){
-            $table->foreign('publicacion_id')
+            $table->foreign('blog_id')
                 ->references('id')
                 ->on('blog');
         });
@@ -38,8 +38,8 @@ class CreateDocumentTable extends Migration
     public function down()
     {
         Schema::table('documento',function ($table){
-            $table->dropForeign(['publicacion_id']);
-            $table->dropColumn('publicacion_id');
+            $table->dropForeign(['blog_id']);
+            $table->dropColumn('blog_id');
         });
 
         Schema::dropIfExists('documento');
