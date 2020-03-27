@@ -6,24 +6,35 @@ use App\Documento;
 
 class DocumentoRepository
 {
-    public function listar($blog_id){
-        return Documento::where('blog_id', $blog_id)->get();
+    public function listar($blog_id) {
+        return Documento::where('blog_id', $blog_id)
+            ->get();
     }
 
+    public function guardar($data) {
 
-    public function guardar($data){
+        //dd($data);
+
+        $originalName = $data->file('archivo')
+                              ->getClientOriginalName();
+
+        $originalName = date('ymdhis-') . strtolower(str_replace('-', '', $originalName));
+
         $documento = new Documento();
 
-        $blog->titulo = $data['nombre'];
-        $blog->archivo = $data['archivo'];
-        $blog->blog_id = $data['blog_id'];
+        $documento->nombre = $data['nombre'];
+        $documento->archivo = $data['archivo'];
+        $documento->blog_id = $data['blog_id'];
+        $documento->archivo = $originalName;
 
-
-        $blog->save();
+        $documento->save();
     }
 
-    public function eliminar($id){
-        return Documento::destroy($id);
+    public function eliminar($id) {
+        /*
+            Traigan el registro, y e elimine fisicamente el archivo
+        */
+
+        Documento::destroy($id);
     }
 }
-

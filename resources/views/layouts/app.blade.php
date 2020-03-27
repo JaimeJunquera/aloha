@@ -102,7 +102,6 @@
 <script src="{{ url('scripts/jquery.form.js') }}"></script>
 <script src="{{ url('scripts/handlebars.runtime-v4.7.3.js') }}"></script>
 
-
 @yield('scripts')
 
 </body>

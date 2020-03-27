@@ -15,7 +15,7 @@ class BlogRepository
     }
 
     public function guardar($data){
-        //Falta incluir el guardar
+
 
         $blog = new Blog();
 

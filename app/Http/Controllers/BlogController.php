@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use Illuminate\Http\Request;
-
-
 use App\Repository\CategoriaRepository;
+use Illuminate\Http\Request;
 use App\Repository\DocumentoRepository;
 use App\Repository\BlogRepository;
 
@@ -67,10 +65,9 @@ class BlogController extends Controller {
 
     public function postAdjuntar(Request $request)
     {
-        //Probando lo que me devuelve el request
-        dd ($request->file());
+        //dd($request);
 
-        //$this->docRepo->guardar($request);
+        $this->docRepo->guardar($request);
     }
 
 }
