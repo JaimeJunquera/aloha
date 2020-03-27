@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f1e0da4-23b4-4a09-8f09-fa7381b3b3ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/DocumentoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/DocumentoRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +181,8 @@
       <workItem from="1585066247314" duration="846000" />
       <workItem from="1585122850778" duration="20111000" />
       <workItem from="1585211441115" duration="17227000" />
-      <workItem from="1585295764320" duration="13921000" />
+      <workItem from="1585295764320" duration="14062000" />
+      <workItem from="1585551529210" duration="7006000" />
     </task>
     <task id="LOCAL-00001" summary="Edición, eliminación y login">
       <created>1585153073791</created>
@@ -253,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585314586710</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Subida correcta del archivo a la base de datos">
+      <created>1585315381431</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585315381431</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Archivo se sube sin problema, fallo a la hora de listar">
+      <created>1585560250447</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585560250447</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +280,8 @@
     <MESSAGE value="Relaciones de datos, migración y validacion de formularios" />
     <MESSAGE value="Creacion de la tabla documentos para incluir archivos, las pestaña en el crud, repositorio y controlador, también se ha creado un jquery" />
     <MESSAGE value="Subida correcta del archivo a la base de datos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Subida correcta del archivo a la base de datos" />
+    <MESSAGE value="Archivo se sube sin problema, fallo a la hora de listar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Archivo se sube sin problema, fallo a la hora de listar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="250" y="57" key="#Servers" timestamp="1585311320144">
@@ -292,10 +308,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="287" y="64" key="#phpunit.xml/0.0.1280.800@0.0.1280.800" timestamp="1585309121902" />
-    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2" timestamp="1585314586493">
+    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2" timestamp="1585560250152">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1585314586493" />
+    <state x="249" y="23" width="782" height="777" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1585560250152" />
     <state width="1238" height="244" key="GridCell.Tab.0.bottom" timestamp="1585312058627">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -356,10 +372,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="128" y="69" key="MergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1585153094587" />
-    <state x="350" y="114" key="MultipleFileMergeDialog" timestamp="1585314613631">
+    <state x="350" y="114" key="MultipleFileMergeDialog" timestamp="1585560267319">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="350" y="114" key="MultipleFileMergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1585314613631" />
+    <state x="350" y="114" key="MultipleFileMergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1585560267319" />
     <state x="396" y="207" key="NewPhpClassDialog" timestamp="1585218940155">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -376,10 +392,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="568" height="445" key="SwitcherDM/0.0.1280.800@0.0.1280.800" timestamp="1585308320080" />
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1585314618147">
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1585560271887">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1585314618147" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1585560271887" />
     <state x="443" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585304161073">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
