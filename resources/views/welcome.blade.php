@@ -72,7 +72,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Usuario</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         @if (Route::has('register'))
@@ -86,6 +86,7 @@
                 <div class="title m-b-md">
                     Aloha
                 </div>
+                Aquí irá el contenido público
             </div>
         </div>
     </body>

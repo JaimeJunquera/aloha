@@ -35,6 +35,7 @@ class BlogController extends Controller {
             'categorias' => $this->catRepo->listar()
         ]);
     }
+
     public function postCrud(Request $request) {
 //        $mensaje = [
 //          'titulo.required' => 'El :attribute debe ser ingresado',
@@ -73,10 +74,14 @@ class BlogController extends Controller {
         //Este return no venia en el blog, al adjuntar se sigue quedando en la pagina y se sube el archivo,
         //Pero por cuestion de este laravel o se me pasa algo se reedirige a la página y yo sólo quiero
         //capturar el post y mostrar el listado de documentos
+
+        //Con este return vuelvo al crud pero sin listar ni nada.
         //return redirect()->back();
+
+        return redirect( 'home/blog' );
     }
 
-    public function getDocumentos($blog_id){
+    public function postDocumentos($blog_id){
         return $this->docRepo->listar($blog_id);
     }
 

@@ -20,8 +20,6 @@ class DocumentoRepository
 
         $data->file('archivo')->move('uploads', $originalName);
 
-        $data->file('archivo')->move('uploads', $originalName);
-
         $documento = new Documento();
 
         $documento->nombre = $data['nombre'];
@@ -33,9 +31,6 @@ class DocumentoRepository
     }
 
     public function eliminar($id) {
-        /*
-            Traigan el registro, y e elimine fisicamente el archivo
-        */
 
         Documento::destroy($id);
     }

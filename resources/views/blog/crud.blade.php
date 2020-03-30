@@ -47,9 +47,9 @@ if(is_object($model)){
                         <label>Categoria</label>
                         <select class="form-control" name="categoria_id">
                             @foreach($categorias as $c) @if(is_object($model))
-                                <option {{ $model->categoria_id == $c->id ? 'selected' : '' }} value="{{ $c->id }}">{{ $c->nombre }}</option>
+                                <option {{ $model->categoria_id == $c->id ? 'selected' : '' }} value="{{ $c->id }}">{{ $c->Nombre }}</option>
                             @else
-                                <option value="{{ $c->id }}">{{ $c->nombre }}</option>
+                                <option value="{{ $c->id }}">{{ $c->Nombre }}</option>
                             @endif @endforeach
                         </select>
                     </div>
@@ -105,6 +105,7 @@ if(is_object($model)){
 
                     <hr>
                     <ul id="adjuntos" class="list-group"></ul>
+
                 </div>
             @endif
         </div>
@@ -112,6 +113,11 @@ if(is_object($model)){
 
 </div>
 
+{{--El problema es que hace post pero retorna a otra página en el tutorial,--}}
+{{--    creo que es por la versión de laravel, se mantiene en la misma página--}}
+{{--    y se puede realizar con exito este javascript--}}
+
+{{--//Para mostrar los documentos posteado y listarlos, probando(js)--}}
 <script id="documentos" type="text/x-handlebars-template">
     @{{#data}}
         <li class="list-group-item">
@@ -121,6 +127,8 @@ if(is_object($model)){
         </li>
     @{{/data}}
 </script>
+
+
 
 @endsection
 

@@ -26,7 +26,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Route::controller('blog', 'BlogController');
 Route::get('/home/blog', 'BlogController@getIndex')->name('index');
 Route::get('/home/blog/crud', 'BlogController@getCrud')->name('crud');
-Route::get('/home/blog/crud/{id}', 'BlogController@getCrud')->name('crud');
+Route::get('/home/blog/crud/{id}', 'BlogController@getCrud');
 Route::post('/home/blog/crud', 'BlogController@postCrud');
 Route::get('/home/blog/ver/{id}', 'BlogController@getVer')->name('ver');
 Route::get('/home/blog/eliminar/{id}', 'BlogController@getEliminar')->name('eliminar');
